@@ -4,10 +4,9 @@ import React, { Component } from 'react';
 
 class App extends Component {
   render() {
-    //33
-    console.log(this.props)
+    //33 console.log(this.props)
     return (
-      //32 hieronder eerst weg dan 2*p
+      //32 hieronder eerst weg dan 2*paragraaf
       <div className="App">
        <p>
          test data:
@@ -24,6 +23,7 @@ class App extends Component {
 
       </div>
     );
+    // aan elkaar koppelen function mapToState doorgeven aan component
   }
 }
 

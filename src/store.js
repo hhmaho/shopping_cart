@@ -2,6 +2,7 @@ import {createStroe} from 'redux'
 
 // 1
 const initialState = {
+    productsLoaded: false,
     products: [],
     //haal de data uit tabletop
 
@@ -14,6 +15,14 @@ const initialState = {
 
 //2
 function reducer(state, action) {
+    if (action.type === "LOAD_PRODUCTS") {
+        return {
+            ...state,
+            productsLoaded: true,
+            products: action.payload,
+        }
+    }
+
     //22 console.log(state, action)
     return state
 }
